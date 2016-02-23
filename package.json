@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/shoukath/Portfolio#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "babel-preset-es2015": "^6.5.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.1",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-postcss": "^6.1.0"
   }
 }

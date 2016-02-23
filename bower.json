@@ -2,7 +2,7 @@
   "name": "Portfolio",
   "homepage": "https://github.com/shoukath/Portfolio",
   "authors": [
-    "Shoukath Khan <sfazlullakhan@expedia.com>"
+    "Shoukath Khan <shoukath@gmail.com>"
   ],
   "description": "",
   "main": "",
@@ -14,5 +14,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.6"
+  }
 }

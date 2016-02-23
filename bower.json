@@ -1,0 +1,18 @@
+{
+  "name": "Portfolio",
+  "homepage": "https://github.com/shoukath/Portfolio",
+  "authors": [
+    "Shoukath Khan <sfazlullakhan@expedia.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

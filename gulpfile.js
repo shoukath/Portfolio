@@ -4,11 +4,13 @@ var gulp = require('./gulptasks')([
         'minify-html'
     ]);
 var clean = require('gulp-clean');
+var livereload = require('gulp-livereload');
 
-gulp.task('stream', function () {
-    return gulp.src('src/**/*.css')
-        .pipe(watch('src/**/*.css'))
-        .pipe(gulp.task('css'));
+gulp.task('watch', function () {
+    livereload.listen();
+    gulp.watch('src/*.css', ['css']);
+    gulp.watch('src/*.js', ['babel']);
+    gulp.watch('src/*.html', ['minify-html']);
 });
 
 gulp.task('clean', function () {
@@ -16,5 +18,5 @@ gulp.task('clean', function () {
         .pipe(clean());
 });
 
-gulp.task('default', ['babel', 'css', 'minify-html']);
+gulp.task('default', ['babel', 'css', 'minify-html', 'watch']);
 

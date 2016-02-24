@@ -8,12 +8,12 @@ var rename = require('gulp-rename');
 
 module.exports = function() {
     return gulp.src('src/**/*.js')
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(babel({
             presets: ['es2015']
         }))
         .pipe(jsmin())
         .pipe(rename({suffix: '.min'}))
-        .pipe(sourcemaps.write('.'))
+        // .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/'));
 };
